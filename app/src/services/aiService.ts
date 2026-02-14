@@ -2,7 +2,7 @@
 import type { AnalysisResult } from "@/types";
 
 // Backend API URL
-const API_BASE = "http://localhost:3001/api";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
 // Full analysis result including chart data
 export interface FullAIResponse extends AnalysisResult {
